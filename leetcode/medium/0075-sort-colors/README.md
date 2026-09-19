@@ -48,14 +48,13 @@ The array has one each of 0, 1, and 2, arranged in-place in the order 0, 1, 2.
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43.5 MB (beats 40.03%)  
-**Submitted:** 2026-09-19T07:41:40.329Z  
+**Memory:** 43.7 MB (beats 21.98%)  
+**Submitted:** 2026-09-19T07:42:27.415Z  
 
 ```java
 class Solution {
     public void sortColors(int[] nums) {
-        int n = nums.length;
-        int low= 0 ; int mid = 0; int high=n-1;
+        int low= 0 ; int mid = 0; int high=nums.length-1;
 
         while(mid<=high){
             if(nums[mid]==0){
