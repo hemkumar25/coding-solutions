@@ -10,7 +10,10 @@ class Solution {
             int x =  nums[i];
             currSum = Math.max(x, currSum + x );
             maxSum = Math.max(currSum, maxSum);
+
+            currMin = Math.min(x,currMin + x);
+            minSum =Math.min(currMin, minSum);
         }
-        return maxSum;
+        return Math.max(maxSum, Math.abs(minSum));
     }
 }
