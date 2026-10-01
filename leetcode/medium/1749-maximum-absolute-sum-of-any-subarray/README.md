@@ -43,9 +43,9 @@ Explanation: The subarray [-5,1,-4] has absolute sum = abs(-5+1-4) = abs(-8) = 8
 ## Solution
 
 **Language:** Java  
-**Runtime:** 0 ms  
-**Memory:** 42.6 MB  
-**Submitted:** 2026-10-01T15:07:32.915Z  
+**Runtime:** 6 ms (beats 74.61%)  
+**Memory:** 67.1 MB (beats 13.51%)  
+**Submitted:** 2026-10-01T15:12:56.091Z  
 
 ```java
 class Solution {
@@ -60,8 +60,11 @@ class Solution {
             int x =  nums[i];
             currSum = Math.max(x, currSum + x );
             maxSum = Math.max(currSum, maxSum);
+
+            currMin = Math.min(x,currMin + x);
+            minSum =Math.min(currMin, minSum);
         }
-        return maxSum;
+        return Math.max(maxSum, Math.abs(minSum));
     }
 }
 ```
