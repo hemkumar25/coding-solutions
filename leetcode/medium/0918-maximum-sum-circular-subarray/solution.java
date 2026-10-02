@@ -24,8 +24,6 @@ class Solution {
             return maxSum;
         }
 
-        int circularSum = total - minSum;
-
-        return Math.max(maxSum, circularSum);
+        return Math.max(maxSum,total - minSum);
     }
 }
