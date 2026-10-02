@@ -8,13 +8,13 @@ class Solution {
         int currMin = nums[0];
 
         for(int i = 1 ; i< nums.length; i++){
-            int  x = nums[i];
-            total += x;
+           
+            total +=  nums[i];
 
-            currMax = Math.max(x, currMax + x);
+            currMax = Math.max( nums[i], currMax + nums[i]);
             maxSum = Math.max(currMax , maxSum);
 
-            currMin = Math.min(x, currMin + x);
+            currMin = Math.min( nums[i], currMin +  nums[i]);
             minSum = Math.min(currMin, minSum);
 
             
