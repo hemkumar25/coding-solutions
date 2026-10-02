@@ -51,8 +51,8 @@ Explanation: Subarray [-2] has maximum sum -2.
 
 **Language:** Java  
 **Runtime:** 7 ms (beats 51.55%)  
-**Memory:** 51 MB (beats 78.75%)  
-**Submitted:** 2026-10-02T13:49:19.864Z  
+**Memory:** 51.1 MB (beats 60.26%)  
+**Submitted:** 2026-10-02T13:50:26.514Z  
 
 ```java
 class Solution {
@@ -81,9 +81,7 @@ class Solution {
             return maxSum;
         }
 
-        int circularSum = total - minSum;
-
-        return Math.max(maxSum, circularSum);
+        return Math.max(maxSum,total - minSum);
     }
 }
 ```
