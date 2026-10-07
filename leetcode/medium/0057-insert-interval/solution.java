@@ -20,7 +20,7 @@ class Solution {
                 for(int j = i; j<intervals.length;j++){
                     list.add(intervals[j]);
                 }
-                
+
                 return list.toArray(new int [list.size()][]);
                 
             }else{
