@@ -48,8 +48,8 @@ Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 97.97%)  
-**Memory:** 46.9 MB (beats 87.96%)  
-**Submitted:** 2026-10-07T06:58:23.455Z  
+**Memory:** 47 MB (beats 74.89%)  
+**Submitted:** 2026-10-07T07:02:11.416Z  
 
 ```java
 class Solution {
@@ -74,7 +74,7 @@ class Solution {
                 for(int j = i; j<intervals.length;j++){
                     list.add(intervals[j]);
                 }
-                
+
                 return list.toArray(new int [list.size()][]);
                 
             }else{
