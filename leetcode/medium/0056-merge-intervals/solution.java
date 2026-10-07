@@ -7,7 +7,7 @@ class Solution {
         int start = intervals[0][0];
         int end = intervals[0][1];
 
-        for(int i = 0; i<intervals.length; i++){
+        for(int i = 1; i<intervals.length; i++){
             int currentStart =  intervals[i][0];
             int currentEnd = intervals[i][1];
 
