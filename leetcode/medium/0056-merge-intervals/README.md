@@ -46,9 +46,9 @@ Explanation: Intervals [1,4] and [4,7] are considered overlapping.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 7 ms (beats 98.89%)  
-**Memory:** 49.4 MB (beats 14.15%)  
-**Submitted:** 2026-10-06T15:41:43.290Z  
+**Runtime:** 8 ms (beats 89.38%)  
+**Memory:** 49.1 MB (beats 42.80%)  
+**Submitted:** 2026-10-07T04:59:00.675Z  
 
 ```java
 class Solution {
@@ -60,7 +60,7 @@ class Solution {
         int start = intervals[0][0];
         int end = intervals[0][1];
 
-        for(int i = 0; i<intervals.length; i++){
+        for(int i = 1; i<intervals.length; i++){
             int currentStart =  intervals[i][0];
             int currentEnd = intervals[i][1];
 
