@@ -20,7 +20,7 @@ class Solution {
         ListNode prevGroupEnd = dummy;
 
         while (true) {
-            // Find the kth node of the current group
+        
             ListNode kth = prevGroupEnd;
 
             for (int i = 0; i < k; i++) {
@@ -32,7 +32,7 @@ class Solution {
 
             ListNode nextGroupStart = kth.next;
 
-            // Reverse the current group
+        
             ListNode prev = nextGroupStart;
             ListNode curr = prevGroupEnd.next;
 
@@ -43,7 +43,7 @@ class Solution {
                 curr = next;
             }
 
-            // Connect the reversed group
+          
             ListNode oldGroupStart = prevGroupEnd.next;
             prevGroupEnd.next = kth;
             prevGroupEnd = oldGroupStart;
