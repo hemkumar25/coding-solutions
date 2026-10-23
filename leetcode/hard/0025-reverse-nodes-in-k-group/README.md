@@ -44,8 +44,8 @@ Output: [3,2,1,4,5]
 
 **Language:** Java  
 **Runtime:** 1 ms (beats 33.90%)  
-**Memory:** 45.8 MB (beats 95.29%)  
-**Submitted:** 2026-10-23T15:21:52.682Z  
+**Memory:** 45.9 MB (beats 92.45%)  
+**Submitted:** 2026-10-23T15:22:38.249Z  
 
 ```java
 /**
@@ -70,7 +70,7 @@ class Solution {
         ListNode prevGroupEnd = dummy;
 
         while (true) {
-            // Find the kth node of the current group
+        
             ListNode kth = prevGroupEnd;
 
             for (int i = 0; i < k; i++) {
@@ -82,7 +82,7 @@ class Solution {
 
             ListNode nextGroupStart = kth.next;
 
-            // Reverse the current group
+        
             ListNode prev = nextGroupStart;
             ListNode curr = prevGroupEnd.next;
 
@@ -93,7 +93,7 @@ class Solution {
                 curr = next;
             }
 
-            // Connect the reversed group
+          
             ListNode oldGroupStart = prevGroupEnd.next;
             prevGroupEnd.next = kth;
             prevGroupEnd = oldGroupStart;
