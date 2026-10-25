@@ -41,8 +41,8 @@ Explanation: 2 does not exist in nums so return -1
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 48.6 MB (beats 13.81%)  
-**Submitted:** 2026-10-10T15:13:37.228Z  
+**Memory:** 47.9 MB (beats 91.72%)  
+**Submitted:** 2026-10-25T14:52:20.302Z  
 
 ```java
 class Solution {
