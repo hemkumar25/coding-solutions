@@ -32,7 +32,7 @@ Explanation: target = 12 occurs 3 times in the given array so the output is 3.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-30T13:53:25.246Z  
+**Submitted:** 2026-11-08T17:29:36.447Z  
 
 ```java
 
