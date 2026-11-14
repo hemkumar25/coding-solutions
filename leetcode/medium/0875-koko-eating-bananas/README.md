@@ -57,9 +57,9 @@ At a speed of 23 bananas per hour, Koko takes 2 hours for the first pile and 1 h
 ## Solution
 
 **Language:** Java  
-**Runtime:** 9 ms (beats 60.89%)  
-**Memory:** 47.5 MB (beats 66.21%)  
-**Submitted:** 2026-11-12T15:37:21.458Z  
+**Runtime:** 8 ms (beats 74.81%)  
+**Memory:** 47 MB (beats 97.80%)  
+**Submitted:** 2026-11-14T06:35:12.980Z  
 
 ```java
 class Solution {
@@ -77,7 +77,7 @@ class Solution {
             int mid = start+(end-start)/2;
             long hours = 0;
             for(int pile:piles){
-                hours+= (pile + (long)mid-1)/mid;
+                hours+= (pile + mid-1)/mid;
             }
              if (hours <= h) {
                 ans = mid;
