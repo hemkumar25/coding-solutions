@@ -13,7 +13,7 @@ class Solution {
             int mid = start+(end-start)/2;
             long hours = 0;
             for(int pile:piles){
-                hours+= (pile + (long)mid-1)/mid;
+                hours+= (pile + mid-1)/mid;
             }
              if (hours <= h) {
                 ans = mid;
