@@ -66,15 +66,26 @@ Explanation: It is impossible because the earliest the third train can depart is
 ## Solution
 
 **Language:** Java  
-**Runtime:** 84 ms (beats 78.50%)  
-**Memory:** 99.2 MB (beats 60.67%)  
-**Submitted:** 2026-11-14T15:17:38.210Z  
+**Runtime:** 49 ms (beats 83.00%)  
+**Memory:** 98.8 MB (beats 85.42%)  
+**Submitted:** 2026-11-14T15:33:22.971Z  
 
 ```java
 class Solution {
     public int minSpeedOnTime(int[] dist, double hour) {
         int minSpeed = 1;
-        int maxSpeed = 10000000;
+        int maxSpeed = 0;
+        for(int d: dist){
+            maxSpeed = Math.max(maxSpeed,d);
+        }
+
+        if (hour <= dist.length - 1) {
+            return -1;
+        }
+
+        int lastSpeed = (int) Math.ceil(dist[dist.length - 1] / (hour - dist.length + 1));
+        maxSpeed = Math.max(maxSpeed, lastSpeed);
+
         int ans = -1;
 
         while(minSpeed<=maxSpeed){
