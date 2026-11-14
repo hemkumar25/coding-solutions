@@ -1,7 +1,18 @@
 class Solution {
     public int minSpeedOnTime(int[] dist, double hour) {
         int minSpeed = 1;
-        int maxSpeed = 10000000;
+        int maxSpeed = 0;
+        for(int d: dist){
+            maxSpeed = Math.max(maxSpeed,d);
+        }
+
+        if (hour <= dist.length - 1) {
+            return -1;
+        }
+
+        int lastSpeed = (int) Math.ceil(dist[dist.length - 1] / (hour - dist.length + 1));
+        maxSpeed = Math.max(maxSpeed, lastSpeed);
+
         int ans = -1;
 
         while(minSpeed<=maxSpeed){
