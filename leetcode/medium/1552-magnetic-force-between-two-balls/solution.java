@@ -27,11 +27,12 @@ class Solution {
             if(position[i] - lastPosition>=distance){
                 balls++;
                 lastPosition = position[i];
+
+                if(balls==m){
+                    return true;
+                }
             }
 
-            if(balls>=m){
-                return true;
-            }
         }
         return false;
     }
