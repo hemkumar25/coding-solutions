@@ -45,9 +45,9 @@ Explanation: We can use baskets 1 and 1000000000.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 46 ms (beats 73.77%)  
-**Memory:** 78.6 MB (beats 75.65%)  
-**Submitted:** 2026-11-16T14:43:23.622Z  
+**Runtime:** 44 ms (beats 91.60%)  
+**Memory:** 78.4 MB (beats 90.87%)  
+**Submitted:** 2026-11-17T05:03:30.503Z  
 
 ```java
 class Solution {
@@ -79,11 +79,12 @@ class Solution {
             if(position[i] - lastPosition>=distance){
                 balls++;
                 lastPosition = position[i];
+
+                if(balls==m){
+                    return true;
+                }
             }
 
-            if(balls>=m){
-                return true;
-            }
         }
         return false;
     }
