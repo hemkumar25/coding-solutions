@@ -45,13 +45,16 @@ Explanation: We can use baskets 1 and 1000000000.
 ## Solution
 
 **Language:** Java  
-**Runtime:** 44 ms (beats 91.60%)  
-**Memory:** 78.4 MB (beats 90.87%)  
-**Submitted:** 2026-11-17T05:03:30.503Z  
+**Runtime:** 46 ms (beats 74.15%)  
+**Memory:** 78.5 MB (beats 83.81%)  
+**Submitted:** 2026-11-17T05:05:51.873Z  
 
 ```java
 class Solution {
     public int maxDistance(int[] position, int m) {
+        if(m==1 || position.length == 1){
+            return 0;
+        }
         Arrays.sort(position);
         int minDistance = 1;
         int maxDistance = position[position.length-1]-position[0];
@@ -84,7 +87,6 @@ class Solution {
                     return true;
                 }
             }
-
         }
         return false;
     }
