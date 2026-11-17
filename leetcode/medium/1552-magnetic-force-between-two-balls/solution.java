@@ -1,5 +1,8 @@
 class Solution {
     public int maxDistance(int[] position, int m) {
+        if(m==1 || position.length == 1){
+            return 0;
+        }
         Arrays.sort(position);
         int minDistance = 1;
         int maxDistance = position[position.length-1]-position[0];
@@ -32,7 +35,6 @@ class Solution {
                     return true;
                 }
             }
-
         }
         return false;
     }
