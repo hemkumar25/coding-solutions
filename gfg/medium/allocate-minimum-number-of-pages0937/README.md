@@ -36,7 +36,7 @@ Explanation: Since there are more students than total books, it's impossible to 
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:49:54.394Z  
+**Submitted:** 2026-11-18T15:50:07.468Z  
 
 ```java
 class Solution {
