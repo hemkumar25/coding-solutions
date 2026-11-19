@@ -45,14 +45,13 @@ The best way is to split it into [1,2,3] and [4,5], where the largest sum among 
 ## Solution
 
 **Language:** Java  
-**Runtime:** 2 ms (beats 34.20%)  
-**Memory:** 42.5 MB (beats 74.46%)  
-**Submitted:** 2026-11-19T14:56:15.803Z  
+**Runtime:** 0 ms  
+**Memory:** 41.9 MB  
+**Submitted:** 2026-11-19T14:56:39.725Z  
 
 ```java
 class Solution {
     public int splitArray(int[] nums, int k) {
-
         int low = 0;
         int high = 0;
 
