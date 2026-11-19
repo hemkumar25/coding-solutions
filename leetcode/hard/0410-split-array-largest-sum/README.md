@@ -46,8 +46,8 @@ The best way is to split it into [1,2,3] and [4,5], where the largest sum among 
 
 **Language:** Java  
 **Runtime:** 2 ms (beats 34.20%)  
-**Memory:** 42.5 MB (beats 83.21%)  
-**Submitted:** 2026-11-19T14:56:28.944Z  
+**Memory:** 42.4 MB (beats 90.32%)  
+**Submitted:** 2026-11-19T14:56:46.019Z  
 
 ```java
 class Solution {
