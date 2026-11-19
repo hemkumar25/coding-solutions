@@ -1,5 +1,13 @@
 class Solution {
     public int splitArray(int[] nums, int k) {
+
+        if(k==1) {
+            int sum =0;
+            for(int num : nums){
+                sum += num;
+            }
+            return sum;
+        }
         int low = 0;
         int high = 0;
 
