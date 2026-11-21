@@ -11,7 +11,7 @@ class Solution {
             int midValue = matrix[mid/col][mid%col];
 
             if(target==midValue)return true;
-            else if(target<midValue) end = mid -1;
+            else if(target<midValue) end = mid-1;
             else start = mid +1;
         }
         return false;
