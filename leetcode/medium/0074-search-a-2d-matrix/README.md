@@ -15,8 +15,6 @@ You must write a solution in `O(log(m * n))` time complexity.
 
  
 
-Original
-Java
  **Example 1:** 
 
 ```
@@ -46,8 +44,8 @@ Output: false
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 43.4 MB (beats 69.56%)  
-**Submitted:** 2026-11-20T13:56:49.262Z  
+**Memory:** 43.2 MB (beats 93.16%)  
+**Submitted:** 2026-11-21T14:08:10.311Z  
 
 ```java
 class Solution {
@@ -63,7 +61,7 @@ class Solution {
             int midValue = matrix[mid/col][mid%col];
 
             if(target==midValue)return true;
-            else if(target<midValue) end = mid -1;
+            else if(target<midValue) end = mid-1;
             else start = mid +1;
         }
         return false;
