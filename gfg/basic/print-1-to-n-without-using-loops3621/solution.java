@@ -1,6 +1,15 @@
 class Solution {
     public void printTillN(int n) {
+        print(1,n);
+    }
+    
+    public void print(int i, int n){
+        if(i>n){
+            return;
+        }
         
-        for(int i=1; i<=n; i++) System.out.print(i+" ");
+        System.out.print(i+" ");
+        
+        print(i+1,n);
     }
 }
