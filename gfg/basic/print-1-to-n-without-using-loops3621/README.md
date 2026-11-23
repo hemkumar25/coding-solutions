@@ -28,13 +28,22 @@ Explanation: We have to print numbers from 1 to 10.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-23T14:26:50.963Z  
+**Submitted:** 2026-11-23T14:31:56.191Z  
 
 ```java
 class Solution {
     public void printTillN(int n) {
+        print(1,n);
+    }
+    
+    public void print(int i, int n){
+        if(i>n){
+            return;
+        }
         
-        for(int i=1; i<=n; i++) System.out.print(i+" ");
+        System.out.print(i+" ");
+        
+        print(i+1,n);
     }
 }
 ```
