@@ -31,7 +31,7 @@ Explanation: All elements are identical, so the array remains unchanged.
 **Language:** Java  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-27T14:05:49.683Z  
+**Submitted:** 2026-11-28T16:19:10.096Z  
 
 ```java
 
